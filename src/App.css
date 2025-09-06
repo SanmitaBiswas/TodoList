@@ -1,0 +1,127 @@
+/* Wrapper for the whole app */
+.TodoWrapper {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #b6cfe8;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.TodoWrapper h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+/* ========== FORM ========== */
+.TodoForm {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.todo-btn {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.todo-btn:hover {
+  background: #357abd;
+}
+
+/* ========== TODO ITEMS ========== */
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: 0.3s ease;
+}
+
+.Todo:hover {
+  background: #95b9de;
+}
+
+/* The text of the todo */
+.Todo p {
+  margin: 0;
+  font-size: 16px;
+  flex: 1;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* Completed state */
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Icons (edit/delete) */
+.Todo svg {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #4a90e2;
+  transition: color 0.3s ease;
+}
+
+.Todo svg:hover {
+  color: #2f5d99;
+}
+
+/* Edit form wrapper */
+.EditTodoForm {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Input inside Edit form */
+.EditTodoForm .todo-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #f39c12;
+  margin-right: 10px;
+  font-size: 16px;
+  background: #fff8e6;
+}
+
+/* Button inside Edit form */
+.EditTodoForm .todo-btn {
+  background: #f39c12;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.EditTodoForm .todo-btn:hover {
+  background: #d9820f;
+}
